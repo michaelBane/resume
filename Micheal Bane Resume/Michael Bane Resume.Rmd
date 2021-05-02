@@ -13,9 +13,12 @@ output: vitae::awesomecv
 ---
 
 ```{r setup, include=FALSE}
+#Default knitr options for the vitae template
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+#Load packages
 library(tibble)
 library(vitae)
+#Source data from separate file.
 source('../resumeData.R')
 ```
 
@@ -25,9 +28,9 @@ source('../resumeData.R')
 workExperience %>%
   detailed_entries(
     what = company,
-    when = glue::glue('{startDate} - {endDate}'),
+    where = glue::glue('{startDate} - {endDate}'),
     with = title,
-    where = location,
+    when = location,
     why = points)
 ```
 
@@ -37,8 +40,8 @@ workExperience %>%
 education %>%
   detailed_entries(
     what = institution,
-    when = glue::glue('{startDate} - {endDate}'),
+    where = glue::glue('{startDate} - {endDate}'),
     with = degree,
-    where = location,
+    when = location,
     why = points)
 ```

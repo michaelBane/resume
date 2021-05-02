@@ -1,0 +1,44 @@
+---
+name: Michael
+surname: Bane
+#position: "Professor"
+address: "Melbourne, Australia"
+phone: +61 439 639 100
+email: "baneanalytics@gmail.com"
+#twitter: baney64
+github: michaelBane
+linkedin: banemichael
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tibble)
+library(vitae)
+source('../resumeData.R')
+```
+
+# Work Experience
+
+```{r workExperience}
+workExperience %>%
+  detailed_entries(
+    what = company,
+    when = glue::glue('{startDate} - {endDate}'),
+    with = title,
+    where = location,
+    why = points)
+```
+
+# Education
+
+```{r}
+education %>%
+  detailed_entries(
+    what = institution,
+    when = glue::glue('{startDate} - {endDate}'),
+    with = degree,
+    where = location,
+    why = points)
+```

@@ -242,7 +242,7 @@
 %-------------------------------------------------------------------------------
 % Define photo ID
 % Usage: \photo[circle|rectangle,edge|noedge,left|right]{<path-to-image>}
-\newcommand{\photo}[2][circle,edge,left]{%
+\newcommand{\photo}[2][rectangle,edge,left]{%
   \def\@photo{#2}
   \@for\tmp:=#1\do{%
     \ifthenelse{\equal{\tmp}{circle} \or \equal{\tmp}{rectangle}}%

@@ -1,10 +1,13 @@
 ---
 name: Michael
 surname: Bane
-#position: "Professor"
-address: "Melbourne, Australia"
+position: Experienced Analytics Professional
+address: Melbourne, Australia
+profilepic: profilepic.jpg
+aboutme: An experienced Data Analyst and People Manager with deep knowledge of advanced concepts relating to Data Science and analytics. I am however primarily focused on applications, and love seeing data in action.
+headcolor: 4a0aa3
 phone: +61 439 639 100
-email: "baneanalytics@gmail.com"
+email: baneanalytics@gmail.com
 #twitter: baney64
 github: michaelBane
 linkedin: banemichael
@@ -34,9 +37,18 @@ workExperience %>%
     why = points)
 ```
 
-# Education
+# Core Skills
 
 ```{r}
+skills %>%
+  brief_entries(
+    when = category,
+    what = skills)
+```
+
+# Education
+
+```{r eduation}
 education %>%
   detailed_entries(
     what = institution,
@@ -45,3 +57,5 @@ education %>%
     when = location,
     why = points)
 ```
+
+

@@ -6,14 +6,14 @@ mlSpec <- c('As Machine Learning (ML) specialist, I support the creation of a ce
             'This role was created in response to my success driving ML projects within previous roles.')
 
 snrAnlMngr <- c('As Senior Analytics Manager, I was responsible for the duties of my prior role (Analytics Manager), with further strategic priorities.',
-                'Outcomes included migration and centralisation of legacy infrastructure and data warehouse (Hadoop) to Cloud (Snowflake).',
+                'Outcomes included migration and centralisation of a legacy infrastructure and data warehouse (Hadoop) to Cloud (Snowflake).',
                 'Other outcomes included the formation of a multidisciplinary ML taskforce to expand scope of in-game content recommendations.')
 
 anlMngr <- c('As Analytics Manager, I was responsible for the analytics team embedded within EA Melbourne (5 Data Analysts and Data Engineers).',
              'Responsibilities included management of the internal data infrastructure, stakeholder engagement and requirements gathering across multiple levels of leadership, delivery of key analytics objectives, advocating for value of analytics and coaching analysts on domain best practices.')
 
 snrGmAnl <- c('As Senior Game Analyst, I was the main point of contact for analytics requests relating to "The Sims FreePlay" product.',
-              'Responsibilities included telemetry design and warehousing support, reporting and dashboards, statistical best practice (AB-Testing), ad-hoc analytics and communication of insights.',
+              'Responsibilities included telemetry design and warehousing support, reporting and dashboards, statistical best practice (A/B testing), ad-hoc analytics and communication of insights.',
               'Key projects included the migration of internal dashboards to Shiny and the development of ML generated recommended content packs.')
 
 sprtDS <- c('Responsibilities included rigorous statistical design and hypothesis testing fit for publication, development of models to support athlete outcomes and parsing/management of multiple disparate data sources.')
